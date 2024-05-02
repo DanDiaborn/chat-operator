@@ -27,13 +27,7 @@ function App() {
   }
 
   useEffect(() => {
-    // setsocket(io('http://localhost:3000'));
-    setsocket(io('https://chat-test-server.onrender.com:3002'));
-    // setsocket(io('https://chat-test-server.onrender.com:3000'));
-    // axios.get('https://chat-test-server.onrender.com/chats').then((response) => {
-    //   console.log(response.data);
-    //   setChats(response.data);
-    // });
+    setsocket(io('https://chat-test-server.onrender.com'));
 
   }, [])
 
