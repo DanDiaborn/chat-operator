@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import Chats from "./components/Chats"
-import ActiveChat from "./components/ActiveChat"
+import Chats from "./modules/chats/Chats"
+import ActiveChat from "./modules/activeChat/ActiveChat"
 import axios from "axios";
 import { io } from "socket.io-client";
 

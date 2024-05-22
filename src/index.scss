@@ -22,7 +22,8 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 2%;
+    gap: 5px;
+    background-color: #f1f2f6;
   }
   &__chats-wrapper{
     flex: 18%;

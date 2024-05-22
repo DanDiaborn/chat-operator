@@ -1,4 +1,5 @@
-import Message from "./Message";
+import Message from "./components/Message";
+import ChatHeader from "./components/ChatHeader";
 import { useState } from "react";
 
 
@@ -16,6 +17,7 @@ const ActiveChat = (props) => {
 
   return <div className="operator-chat__active-chat-wrapper active-chat">
     <div className="active-chat__wrapper">
+      <ChatHeader />
       <div className="active-chat__current-user">{props.activeChat}</div>
       <ul className="active-chat__list">
         {props.activeChatMessages.map((el, key) => <Message key={key} author={el.author} text={el.text} type={el.type} />)}
