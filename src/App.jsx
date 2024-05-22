@@ -40,7 +40,6 @@ function App() {
       socket.emit('getChats');
       socket.on('getChats', (chats) => {
         setChats(chats);
-        console.log(chats);
       });
       // setNewChat('User1');
     }

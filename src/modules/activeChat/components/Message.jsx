@@ -1,15 +1,15 @@
 
 
 const Message = (props) => {
-  return (props.type === 'Operator')
-    ? <li className="active-chat__message active-chat__message-user">
-      <div className="active-chat__message-author">{props.author}</div>
-      <div className="active-chat__message-text">{props.text}</div>
-    </li>
-    : <li className="active-chat__message active-chat__message-operator">
-      <div className="active-chat__message-author">{props.author}</div>
-      <div className="active-chat__message-text">{props.text}</div>
-    </li>
+
+  const messageTypeClass = (props.type === 'Operator')
+    ? 'chat-list__message chat-list__operator'
+    : 'chat-list__message chat-list__user';
+
+  return <li className={messageTypeClass}>
+    <div className="chat-list__message-text">{props.text}</div>
+    <div className="chat-list__time">12:34</div>
+  </li>
 }
 
 export default Message;
