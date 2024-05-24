@@ -27,8 +27,8 @@ function App() {
   }
 
   useEffect(() => {
-    // setsocket(io("https://okuoku.ru:6001/chat", {
-    setsocket(io("https://okuoku.ru", {
+    setsocket(io("https://okuoku.ru:6001/chat", {
+      // setsocket(io("https://okuoku.ru", {
       transports: ["websocket", "polling"],
       withCredentials: true
     }));
